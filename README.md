@@ -1,11 +1,15 @@
 # Usage
 ```html
-<x-laravel-breadcrumbs::breadcrumbs
-    title="{{ __('Go dashboard') }}"
-    route="dashboard"
->
-    {{ __('Edit') }}: <b>#{{ $link->hash }}</b>
-</x-laravel-breadcrumbs::breadcrumbs>
+<x-laravel-breadcrumbs::breadcrumbs :breadcrumbs="[
+    [
+        'title' => __('Go dashboard'),
+        'route' => 'dashboard',
+    ],
+    [
+        'title' => __('Edit') . ': <b>#' . $link->hash . '</b>',
+    ]
+]"
+/>
 ```
 
 # Publishing
