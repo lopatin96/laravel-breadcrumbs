@@ -15,5 +15,5 @@
 # Publishing
 ### Views
 ```php
-php artisan vendor:publish --tag="laravel-components-views"
+php artisan vendor:publish --tag="laravel-breadcrumbs-views"
 ```
